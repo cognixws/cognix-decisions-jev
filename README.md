@@ -7,18 +7,18 @@ a second instead of reading the whole page every step.
 
 ## What you need
 
-- COGNIX[WS] with manifest version 11 (Settings ▸ Fast decisions).
+- COGNIX[WS] with manifest version 11 (Settings ▸ Helper model).
 - Node.js on the computer that runs COGNIX[WS].
 - A TypeSafe API key, from [console.typesafe.ai/keys](https://console.typesafe.ai/keys).
 
 ## Install
 
-1. In COGNIX[WS], open **Settings ▸ Fast decisions** and press **Add** next to
+1. In COGNIX[WS], open **Settings ▸ Helper model** and press **Add** next to
    Jev, or open **Extensions ▸ Add** and enter
    `https://github.com/cognixws/picode-decisions-jev`.
 2. Review what it adds and install it.
 3. On the extension's page, paste your TypeSafe API key.
-4. In **Settings ▸ Fast decisions**, choose **Jev (TypeSafe)** and press
+4. In **Settings ▸ Helper model**, choose **Jev (TypeSafe)** and press
    **Test**.
 
 Agents you start afterwards get `find`, `check` and `target` in their
