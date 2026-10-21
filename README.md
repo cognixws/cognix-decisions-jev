@@ -46,7 +46,9 @@ key stays in the extension's encrypted settings.
 relay: `POST /decide` adds the key and model and forwards the System One
 request to TypeSafe over one kept-alive connection; `GET /status` reports
 `ready`, `needs-setup` (no key) or `needs-attention` (the last call was
-refused). COGNIX[WS] checks every answer before a tool acts on it.
+refused). A request past what the model reads at once (about 32 thousand
+tokens) answers 413, and COGNIX[WS] asks again with less of the page.
+COGNIX[WS] checks every answer before a tool acts on it.
 
 ## License
 

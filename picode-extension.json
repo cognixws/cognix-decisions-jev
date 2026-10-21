@@ -1,7 +1,7 @@
 {
   "id": "picode-decisions-jev",
   "name": "Jev fast decisions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "apiVersion": 11,
   "publisher": "COGNIX[SE]",
   "description": "Answers COGNIX[WS]'s fast decisions with TypeSafe's Jev: which element of a page matches what an agent described, and yes/no questions about a page. Sends the page's text (and, to locate on screen, a screenshot) to api.typesafe.ai.",

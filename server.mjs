@@ -95,6 +95,12 @@ const server = http.createServer(async (req, res) => {
       body.model = s.model;
       const answer = await forward(body, s.key);
       last = { ok: answer.status === 200, auth: answer.status === 401 || answer.status === 403 };
+      // The model's limit is tokens (about 32 thousand): PiCode asks again
+      // with less of the page when told 413.
+      if (answer.status === 400 && answer.text.includes("max_tokens_exceeded")) {
+        last = { ok: true };
+        return send(413, { error: "the request is past what the model reads at once" });
+      }
       if (answer.status !== 200) {
         log(`TypeSafe answered ${answer.status}: ${answer.text.slice(0, 200)}`);
         return send(502, { error: `TypeSafe answered ${answer.status}` });
