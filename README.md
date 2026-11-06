@@ -15,7 +15,7 @@ a second instead of reading the whole page every step.
 
 1. In COGNIX[WS], open **Settings ▸ Helper model** and press **Add** next to
    Jev, or open **Extensions ▸ Add** and enter
-   `https://github.com/cognixws/picode-decisions-jev`.
+   `https://github.com/cognixws/cognix-decisions-jev`.
 2. Review what it adds and install it.
 3. On the extension's page, paste your TypeSafe API key.
 4. In **Settings ▸ Helper model**, choose **Jev (TypeSafe)** and press
